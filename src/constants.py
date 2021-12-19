@@ -9,5 +9,5 @@ keys = SimpleNamespace(
 )
 
 keyboards = SimpleNamespace(
-    main=create_keyboard(keys.settings),
+    main=create_keyboard(keys.settings, keys.exit),
 )

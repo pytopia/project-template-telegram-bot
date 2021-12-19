@@ -48,7 +48,7 @@ class Bot:
 
     def send_message(self, chat_id, text, reply_markup=None, emojize=True):
         """
-        Send message to telegram bot.
+        Send message to Telegram user
         """
         if emojize:
             text = emoji.emojize(text, use_aliases=True)
@@ -58,5 +58,5 @@ class Bot:
 
 if __name__ == '__main__':
     logger.info('Bot started')
-    nashenas_bot = Bot(telebot=bot)
-    nashenas_bot.run()
+    Bot(telebot=bot)
+    
